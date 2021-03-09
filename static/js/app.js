@@ -2,7 +2,7 @@ function getName() {
     // Select dropdown menu id and assign it to a variable
     let dropdownMenu = d3.select('#selDataset');
     // Read "names" values from json file and append into dropdown menu
-    d3.json('/data/samples.json')
+    d3.json('data/samples.json')
         .then(subject => subject.names
             .forEach(name => dropdownMenu
                 .append('option')
@@ -30,7 +30,7 @@ function optionChanged(id) {
 // Demographic Info Box
 function getBoxdata(id) {
     //Read "metadata" from json file for each subject and assign it to a variable
-    d3.json('/data/samples.json').then(data => {
+    d3.json('data/samples.json').then(data => {
             let subjectData = data.metadata
                 .filter(subject => subject.id.toString() === id)[0];
 
@@ -54,7 +54,7 @@ getName();
 // Bar chart
 function getBar(id) {
     // Read data from json file for each sample
-    d3.json('/data/samples.json').then(data => {
+    d3.json('data/samples.json').then(data => {
             let sortedSample = data.samples.filter(sample => sample.id === id)[0];
             console.log(sortedSample);
             // Trace for bar chart that displays each sample top 10 OTU values
@@ -85,7 +85,7 @@ function getBar(id) {
 // Bubble chart
 function getBubble(id) {
     // Read data from json file for each sample, assign it to a variable, and plot it
-    d3.json('/data/samples.json').then(data => {
+    d3.json('data/samples.json').then(data => {
             let sortedSample = data.samples.filter(sample => sample.id === id)[0];
             console.log(sortedSample);
 

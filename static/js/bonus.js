@@ -2,7 +2,7 @@
 // Gauge chart
 function getGauge(id) {
     // Read "metadata" from json file for each subject and assign it to a variable
-    d3.json('/data/samples.json').then(data => {
+    d3.json('data/samples.json').then(data => {
         let subjectData = data.metadata.filter(subject => subject.id.toString() === id)[0];
         console.log(subjectData);
 
