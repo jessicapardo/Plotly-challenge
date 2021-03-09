@@ -1,0 +1,18 @@
+/* The styles for the header */
+.jumbotron {
+    color: white;
+    background: rgb(23, 95, 177);
+}
+
+.jumbotron h1{
+    color: white;
+}
+
+.well {
+    background: rgb(23, 95, 177);
+}
+
+.well h5{
+    color: white;
+    font-size: 14px;
+}
