@@ -15,7 +15,7 @@ Use the interactive charts below to explore the dataset. Select a test subject I
 
 The Plotly bar chart use the D3 library to read in `samples.json`, and create a horizontal bar chart with a dropdown menu to display the top 10 OTUs found in that individual.
 
-![Plotly - Bar Chart](Images/bar_chart.jpg)
+![Plotly - Bar Chart](Images/bar_chart.png)
 
 ## Plotly - Bubble Chart
 
@@ -47,7 +47,7 @@ Click the following link to see how it looks like [Belly Button Biodiversity Das
 
 To view the [JavaScript Code](static/js/app.js)
 To view the [HTML code](index.html)
-To view [Data](data/sample.json)
+To view [Data](data/samples.json)
 
 
 ### About the Data
